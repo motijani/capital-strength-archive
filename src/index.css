@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +97,44 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gym-black text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  .container {
+    @apply px-4 md:px-6;
+  }
+}
+
+@layer components {
+  .btn-yellow {
+    @apply bg-gym-yellow text-gym-black font-bold text-lg py-3 px-8 transition-all hover:bg-white;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold mb-6 uppercase relative;
+  }
+
+  .section-title::after {
+    @apply content-[''] absolute left-0 -bottom-2 w-16 h-1 bg-gym-yellow;
+  }
+
+  .section-subtitle {
+    @apply text-2xl font-bold mb-4 uppercase text-gym-yellow;
   }
 }
