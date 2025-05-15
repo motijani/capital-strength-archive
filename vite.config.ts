@@ -5,7 +5,6 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  console.log("Vite config mode:", mode); // Log the mode
   return {
     server: {
       host: "::",
