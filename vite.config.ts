@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   base: mode === 'production'
     ? '/capital-strength-archive/'
-    : '/',                 // for localhost
+    : '/',    
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
