@@ -4,9 +4,11 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
+export default defineConfig(({ mode }) => {
+  console.log("Vite config mode:", mode); // Log the mode
+  return {
+    server: {
+      host: "::",
     port: 8080,
   },
   plugins: [
@@ -16,8 +18,9 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   base: mode === 'production' ? '/capital-strength-archive/' : '/',
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
     },
-  },
-}));
+  };
+});
