@@ -1,7 +1,7 @@
 
 import { DumbbellIcon, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import supp from '@/assets/supplements.jpg'
 const ServicesSection = () => {
   return (
     <section className="py-20 bg-gym-black" id="services">
@@ -40,7 +40,7 @@ const ServicesSection = () => {
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="bg-black rounded p-4">
                 <img
-                  src="/lovable-uploads/2fea036f-0449-43a2-98c5-ca7fc9185de4.png"
+                  src={supp}
                   alt="Supplement store shelves"
                   className="w-full h-32 object-cover rounded"
                 />

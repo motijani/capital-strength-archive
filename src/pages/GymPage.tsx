@@ -9,28 +9,46 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const imagePaths = [
-  "locker_room1.jpg",
-  "locker_room2.jpg",
-  "mma.jpg",
-  "room1N.jpg",
-  "room1NW.jpg",
-  "room1NW2.jpg",
-  "room1S.jpg",
-  "room1S2.jpg",
-  "room1SE.jpg",
-  "room1SW.jpg",
-  "room2N.jpg",
-  "room2NE.jpg",
-  "room2S.jpg",
-  "room2SW.jpg",
-  "room12S.jpg",
+// Import images from src/assets
+import lockerRoom1Img from '@/assets/locker_room1.jpg';
+import lockerRoom2Img from '@/assets/locker_room2.jpg';
+import mmaImg from '@/assets/mma.jpg';
+import room1NImg from '@/assets/room1N.jpg';
+import room1NWImg from '@/assets/room1NW.jpg';
+import room1NW2Img from '@/assets/room1NW2.jpg';
+import room1SImg from '@/assets/room1S.jpg';
+import room1S2Img from '@/assets/room1S2.jpg';
+import room1SEImg from '@/assets/room1SE.jpg';
+import room1SWImg from '@/assets/room1SW.jpg';
+import room2NImg from '@/assets/room2N.jpg';
+import room2NEImg from '@/assets/room2NE.jpg';
+import room2SImg from '@/assets/room2S.jpg';
+import room2SWImg from '@/assets/room2SW.jpg';
+import room12SImg from '@/assets/room12S.jpg';
+import cardioImg from '@/assets/cardio.jpg';
+
+
+const originalFilenames = [
+  "locker_room1.jpg", "locker_room2.jpg", "mma.jpg", "room1N.jpg", "room1NW.jpg",
+  "room1NW2.jpg", "room1S.jpg", "room1S2.jpg", "room1SE.jpg", "room1SW.jpg",
+  "room2N.jpg", "room2NE.jpg", "room2S.jpg", "room2SW.jpg", "room12S.jpg", "cardio.jpg"
 ];
 
-const getImageName = (path: string) => {
-  const fileName = path.split("/").pop()?.split(".")[0] || "Gym image";
-  return fileName.replace(/_/g, " ").replace(/\d+/g, (match) => ` ${match}`).trim();
+const importedImages = [
+  lockerRoom1Img, lockerRoom2Img, mmaImg, room1NImg, room1NWImg, room1NW2Img,
+  room1SImg, room1S2Img, room1SEImg, room1SWImg, room2NImg, room2NEImg,
+  room2SImg, room2SWImg, room12SImg, cardioImg
+];
+
+const getImageName = (filename: string) => {
+  const namePart = filename.split(".")[0] || "Gym image";
+  return namePart.replace(/_/g, " ").replace(/\d+/g, (match) => ` ${match}`).trim();
 };
+
+const imagesData = originalFilenames.map((filename, index) => ({
+  src: importedImages[index],
+  name: getImageName(filename),
+}));
 
 const GymPage = () => {
   return (
@@ -50,16 +68,16 @@ const GymPage = () => {
                 className="w-full max-w-4xl mx-auto"
               >
                 <CarouselContent>
-                  {imagePaths.map((path, index) => (
+                  {imagesData.map((image, index) => (
                     <CarouselItem key={index} className="basis-full lg:basis-1/2">
                       <div className="p-1 aspect-square overflow-hidden rounded-lg">
                         <img
-                          src={`/${path}`}
-                          alt={getImageName(path)}
+                          src={image.src}
+                          alt={image.name}
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <p className="text-center mt-2 text-sm">{getImageName(path)}</p>
+                      <p className="text-center mt-2 text-sm">{image.name}</p>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
