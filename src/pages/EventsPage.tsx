@@ -11,13 +11,13 @@ const EventsPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-12 text-center">Events</h1>
-            
+
             <div className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-gym-yellow">Powerlifting Meet Results</h2>
               <div className="bg-gym-dark-gray p-8 rounded-lg">
                 <h3 className="text-2xl font-bold mb-4">March 30, 2019 – Powerlifting Meet</h3>
                 <p className="mb-6">
-                  Congratulations to all participants in our March 2019 powerlifting meet! 
+                  Congratulations to all participants in our March 2019 powerlifting meet!
                   We had amazing performances across all weight classes and divisions.
                 </p>
                 <div className="space-y-4">
@@ -40,10 +40,10 @@ const EventsPage = () => {
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h2 className="text-3xl font-bold mb-8 text-gym-yellow">Upcoming Events</h2>
-              <div className="space-y-6">
+              {/* <div className="space-y-6">
                 <div className="bg-gym-dark-gray p-6 rounded-lg">
                   <div className="flex items-start">
                     <Calendar size={24} className="text-gym-yellow mr-4 mt-1" />
@@ -76,7 +76,7 @@ const EventsPage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

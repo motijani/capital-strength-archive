@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           onClick={toggleMenu}
           className="md:hidden text-white"
           aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -51,10 +51,10 @@ const Navbar = () => {
             <Link to="/hours" className="text-white hover:text-gym-yellow transition px-2 py-1">Hours & Rates</Link>
             <Link to="/events" className="text-white hover:text-gym-yellow transition px-2 py-1">Events</Link>
             <Link to="/contact" className="text-white hover:text-gym-yellow transition px-2 py-1">Contact</Link>
-            <Link to="/cart" className="text-white hover:text-gym-yellow transition px-2 py-1 flex items-center">
+            {<Link to="/cart" className="text-white hover:text-gym-yellow transition px-2 py-1 flex items-center">
               <ShoppingCart size={20} />
               <span className="ml-1">$0.00</span>
-            </Link>
+            </Link>}
           </div>
         </div>
       )}

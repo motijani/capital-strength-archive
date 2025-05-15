@@ -39,17 +39,10 @@ const ServicesSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="bg-black rounded p-4">
-                <img 
-                  src="/lovable-uploads/2fea036f-0449-43a2-98c5-ca7fc9185de4.png" 
-                  alt="Supplement store shelves" 
-                  className="w-full h-32 object-cover rounded" 
-                />
-              </div>
-              <div className="bg-black rounded p-4">
-                <img 
-                  src="/lovable-uploads/dd6fea84-021b-447f-a4cd-fa6c35ba03d1.png" 
-                  alt="Supplement store display" 
-                  className="w-full h-32 object-cover rounded" 
+                <img
+                  src="/lovable-uploads/2fea036f-0449-43a2-98c5-ca7fc9185de4.png"
+                  alt="Supplement store shelves"
+                  className="w-full h-32 object-cover rounded"
                 />
               </div>
             </div>

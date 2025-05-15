@@ -15,7 +15,7 @@ const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       toast({
@@ -36,7 +36,7 @@ const ContactPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-12 text-center">Contact Us</h1>
-            
+
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div>
@@ -55,7 +55,7 @@ const ContactPage = () => {
                       className="w-full px-4 py-3 bg-gym-dark-gray border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gym-yellow"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-1">
                       Email
@@ -69,7 +69,7 @@ const ContactPage = () => {
                       className="w-full px-4 py-3 bg-gym-dark-gray border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gym-yellow"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-1">
                       Message
@@ -83,7 +83,7 @@ const ContactPage = () => {
                       className="w-full px-4 py-3 bg-gym-dark-gray border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gym-yellow"
                     />
                   </div>
-                  
+
                   <button
                     type="submit"
                     disabled={isSubmitting}
@@ -98,7 +98,7 @@ const ContactPage = () => {
                   </button>
                 </form>
               </div>
-              
+
               {/* Contact Info */}
               <div>
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
@@ -111,15 +111,15 @@ const ContactPage = () => {
                       <p className="text-gray-300">Albany, NY 12206</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Mail size={24} className="text-gym-yellow mr-4 mt-1" />
                     <div>
                       <h3 className="font-bold">Email</h3>
-                      <p className="text-gray-300">sam@albanystrength.com</p>
+                      <p className="text-gray-300">support@albanystrength.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <Phone size={24} className="text-gym-yellow mr-4 mt-1" />
                     <div>
@@ -128,7 +128,7 @@ const ContactPage = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-8">
                   <h2 className="text-2xl font-bold mb-6">Hours</h2>
                   <div className="space-y-3">

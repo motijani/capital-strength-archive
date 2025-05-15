@@ -45,7 +45,7 @@ const ContactSection = () => {
               </div>
               <div className="flex items-center">
                 <Mail size={24} className="text-gym-yellow mr-3" />
-                <p>sam@albanystrength.com</p>
+                <p>support@albanystrength.com</p>
               </div>
               <div className="flex items-center">
                 <Phone size={24} className="text-gym-yellow mr-3" />
@@ -54,6 +54,7 @@ const ContactSection = () => {
             </div>
             <div className="mt-8">
               <p className="text-gray-300">For supplement orders, call the store at 518-433-1703.</p>
+              <p className="text-gray-300">For a site like this contact: 929-423-611 / email: mohammedtjay@gmail.com</p>
             </div>
           </div>
         </div>

@@ -10,12 +10,12 @@ const ServicesPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-8 text-center">Our Services</h1>
-            
+
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div className="bg-gym-dark-gray p-8 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4 text-gym-yellow">Gym Membership</h2>
                 <p className="mb-4">
-                  Albany Strength Gym is geared to strength training, size building, and rehabilitation. 
+                  Albany Strength Gym is geared to strength training, size building, and rehabilitation.
                   It is pro heavy training and encourages big lifts.
                 </p>
                 <p className="mb-4">
@@ -29,11 +29,11 @@ const ServicesPage = () => {
                 </ul>
                 <p>No contracts, no start-up fees, no tax!</p>
               </div>
-              
+
               <div className="bg-gym-dark-gray p-8 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4 text-gym-yellow">Supplement Store</h2>
                 <p className="mb-4">
-                  Our Supplement Store features the highest quality supplements for the best price, 
+                  Our Supplement Store features the highest quality supplements for the best price,
                   and is now available online.
                 </p>
                 <p className="mb-4">
@@ -45,24 +45,26 @@ const ServicesPage = () => {
                   <li>• Amino acids</li>
                   <li>• Vitamins and minerals</li>
                   <li>• Recovery supplements</li>
+                  <li>• Gym Merchandise</li>
                 </ul>
-                <p>For supplement orders, call the store at 518-433-1703.</p>
+                <p>For supplement orders, call the store at 518-433-1703.
+                </p>
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-12">
               <div className="bg-gym-dark-gray p-8 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4 text-gym-yellow">MMA Classes</h2>
                 <p className="mb-4">
-                  We offer MMA classes for all skill levels. Contact us for more information on 
+                  We offer MMA classes for all skill levels. Contact us for more information on
                   schedule and pricing.
                 </p>
               </div>
-              
+
               <div className="bg-gym-dark-gray p-8 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4 text-gym-yellow">Massage Therapy</h2>
                 <p className="mb-4">
-                  We have a licensed massage therapist in the building who specializes in ART therapy 
+                  We have a licensed massage therapist in the building who specializes in ART therapy
                   to fix injuries. Contact us to schedule an appointment.
                 </p>
               </div>
